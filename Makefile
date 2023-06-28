@@ -23,3 +23,5 @@ docker_build:
 	- docker rmi mgsurve_webinar2023:dev -f
 	- docker build -t mgsurve_webinar2023:dev .
 
+docker_prune:
+	- docker system prune

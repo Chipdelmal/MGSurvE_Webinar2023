@@ -12,10 +12,13 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir MGSurvE_Webinar2023
 WORKDIR /MGSurvE_Webinar2023
+RUN mkdir tests \
+    && mkdir demos
 ###############################################################################
-# Copy Requirements and License
+# Copy Files
 ###############################################################################
-COPY ./Verification . 
+COPY ./demos/* ./demos/ 
+COPY ./tests/* ./tests/
 COPY LICENSE .
 ###############################################################################
 # Copy Paper and Demo Experiments Files
@@ -36,8 +39,6 @@ RUN conda update -n base -c defaults conda \
     && conda install -c conda-forge deap -y \ 
     && conda install jupyter \
     && conda install jupyterlab \ 
-    # && conda env update --file requirements.yml -n base --prune \
-    # && rm requirements.yml \
     && pip install MGSurvE
 ###############################################################################
 # Entrypoint
