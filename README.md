@@ -2,7 +2,8 @@
 
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/MGSurvE)](https://pypi.org/project/MGSurvE/)
 [![PyPI version](https://badge.fury.io/py/MGSurvE.svg)](https://badge.fury.io/py/MGSurvE)
-[<img src="https://img.shields.io/badge/dockerhub-img-blue.svg?logo=LOGO">](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023)
+[<img src="https://img.shields.io/badge/dockerhub-img-blue.svg?logo=docker">](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023)
+[<img src="https://img.shields.io/badge/jupyter-lab-F37626.svg?logo=jupyter">](https://jupyterlab.readthedocs.io/en/latest/#)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Chipdelmal/MGSurvE)
 
@@ -11,7 +12,7 @@
 The code and materials for this webinar can be downloaded and run by installing the codebase locally, or by using our docker image. If something goes wrong with the installations have a look at our [installation documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html), where more information and alternatives are provided.
 
 
-### Docker (strongly suggested)
+### A) Docker (strongly recommended)
 
 The easiest way to install [Docker](https://docs.docker.com/engine/install/) and download our [docker image](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023):
 
@@ -27,7 +28,7 @@ docker run -p 8888:8888 chipdelmal/mgsurve_webinar2023
 
 and head to the following address on your internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
 
-### Local Installation
+### B) Local Installation
 
 This option is the best for developers and users who are familiar with working with [Python](https://www.python.org/) packages as it works well with [VSCode](https://code.visualstudio.com/) and other IDE and development environments.
 
