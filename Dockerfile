@@ -15,7 +15,7 @@ WORKDIR /MGSurvE_Webinar2023
 ###############################################################################
 # Copy Requirements and License
 ###############################################################################
-# COPY ./conda/requirements.yml . 
+COPY ./Verification . 
 COPY LICENSE .
 ###############################################################################
 # Copy Paper and Demo Experiments Files
