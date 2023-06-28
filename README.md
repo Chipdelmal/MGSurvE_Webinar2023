@@ -1,5 +1,7 @@
 # MGSurvE_Webinar2023
 
+[<img src="https://img.shields.io/badge/dockerhub-img-blue.svg?logo=LOGO">](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023)
+
 ## Installation Instructions
 
 The code and materials for this webinar can be downloaded and run by installing the codebase locally, or by using our docker image. If something goes wrong with the installations have a look at our [installation documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html), where more information and alternatives are provided.

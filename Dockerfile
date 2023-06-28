@@ -39,9 +39,11 @@ RUN conda update -n base -c defaults conda \
     && conda install -c conda-forge deap -y \ 
     && conda install jupyter \
     && conda install jupyterlab \ 
+    && pip install termcolor \
+    && conda install -c conda-forge nodejs \
     && pip install MGSurvE
 ###############################################################################
 # Entrypoint
 ###############################################################################
 EXPOSE 8888
-CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root"]
+CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''","--NotebookApp.password=''"]
