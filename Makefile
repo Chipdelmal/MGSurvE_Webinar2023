@@ -13,10 +13,10 @@ docker_release:
 	- docker build -t chipdelmal/mgsurve_webinar2023:latest .
 	- docker push chipdelmal/mgsurve_webinar2023:latest
 
-docker_run:
+docker_bash:
 	- docker run -it mgsurve_webinar2023:dev bash
 
-docker_jupyter:
+docker_run:
 	- docker run -p 8888:8888 mgsurve_webinar2023:dev
 
 docker_build:
