@@ -20,7 +20,7 @@ RUN mkdir tests \
 COPY ./demos/* ./demos/ 
 COPY ./tests/* ./tests/
 COPY LICENSE .
-COPY README .
+COPY README.md .
 ###############################################################################
 # Install Packages
 ###############################################################################
