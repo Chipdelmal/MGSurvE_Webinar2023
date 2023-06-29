@@ -1,4 +1,4 @@
-# MGSurvE_Webinar2023
+# MGSurvE: Webinar 2023
 
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/MGSurvE)](https://pypi.org/project/MGSurvE/)
 [![PyPI version](https://badge.fury.io/py/MGSurvE.svg)](https://badge.fury.io/py/MGSurvE)
