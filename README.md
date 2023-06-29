@@ -9,8 +9,17 @@
 [<img src="https://img.shields.io/badge/ReadThe-docs-E40046.svg?logo=readthedocs">](https://chipdelmal.github.io/MGSurvE/)
 
 
+## Contents
 
+The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal/MGSurvE) structure:
 
+0. [Fundamentals](./demos/fundamentals)
+   1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
+1. [Landscape](./demos/landscape/)
+2. [Optimization](./demos/optimization/)
+3. [Analysis](./demos/analysis/)
+
+all of which will be covered in the webinar so that all of its features can be used by attendees.
 ## Installation Instructions
 
 The code and materials for this webinar can be downloaded and run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [docker container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
