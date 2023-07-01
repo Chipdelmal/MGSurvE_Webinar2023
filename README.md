@@ -14,8 +14,16 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
 
 0. [Fundamentals](./demos/fundamentals)
    1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
+   2. [Workflow Breakdown](./demos/fundamentals/breakdown.ipynb)
 1. [Landscape](./demos/landscape/)
+   1. Landscape Elements
+   2. Heterogeneous Point-Types
+   3. Custom Migration Matrix
 2. [Optimization](./demos/optimization/)
+   1. Genetic Algorithm Basics
+   2. Discrete Optimization (GA)
+   3. Continuous Optimization (GA)
+   4. Continuous Optimization (PSO)
 3. [Analysis](./demos/analysis/)
 
 all of which will be covered in the webinar so that all of its features can be used by attendees.
