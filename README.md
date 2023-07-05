@@ -16,9 +16,9 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
    2. [Workflow Breakdown](./demos/fundamentals/breakdown.ipynb)
 1. [Landscape](./demos/landscape/)
-   1. [Landscape Elements](./demos/landscape/simpleLandscape.ipynb)
+   1. [Basic Landscape Elements](./demos/landscape/simpleLandscape.ipynb)
    2. [Heterogeneous Point-Types](./demos/landscape/complexLandscape.ipynb)
-   3. Custom Migration Matrix
+   3. [Custom Migration Matrix](./demos/landscape/customLandscape.ipynb)
 2. [Optimization](./demos/optimization/)
    1. Genetic Algorithm Basics
    2. Discrete Optimization (GA)
