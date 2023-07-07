@@ -13,12 +13,16 @@ RUN apt-get update \
     && mkdir MGSurvE_Webinar2023
 WORKDIR /MGSurvE_Webinar2023
 RUN mkdir tests \
-    && mkdir demos
+    && mkdir demos \
+    && mkdir data \
+    && mkdir media
 ###############################################################################
 # Copy Files
 ###############################################################################
 COPY ./demos/ ./demos/ 
 COPY ./tests/ ./tests/
+COPY ./data/ ./data/
+COPY ./media/ ./media/
 COPY LICENSE .
 COPY README.md .
 ###############################################################################
@@ -28,16 +32,10 @@ RUN conda update -n base -c defaults conda \
     && conda config --set offline false \
     && conda config --add channels conda-forge \
     && conda config --add channels bioconda \
-    && conda install gdal -y \
-    && conda install fiona -y \
-    && conda install pyproj -y \
-    && conda install cartopy -y \
-    && conda install libpysal -y \
-    && conda install -c conda-forge deap -y \ 
-    && conda install jupyter \
-    && conda install jupyterlab \ 
+    && conda install gdal fiona pyproj cartopy libpysal -y \
+    && conda install -c conda-forge deap nodejs -y \ 
+    && conda install jupyter jupyterlab \
     && pip install termcolor \
-    && conda install -c conda-forge nodejs \
     && pip install MGSurvE
 ###############################################################################
 # Entrypoint
