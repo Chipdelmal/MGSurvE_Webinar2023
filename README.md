@@ -25,6 +25,8 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    3. Continuous Optimization (GA)
    4. Continuous Optimization (PSO)
 3. [Analysis](./demos/analysis/)
+4. [Further Information](./demos/more/)
+   1. [Mathematical Formulation](./demos/more/math.ipynb)
 
 all of which will be covered in the webinar so that all of its features can be used by attendees.
 ## Installation Instructions
