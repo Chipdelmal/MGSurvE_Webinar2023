@@ -20,7 +20,7 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    2. [Heterogeneous Point-Types](./demos/landscape/complexLandscape.ipynb)
    3. [Custom Migration Matrix](./demos/landscape/customLandscape.ipynb)
 2. [Optimization](./demos/optimization/)
-   1. Genetic Algorithm Basics
+   1. [Genetic Algorithm Basics](./demos/optimization/ga.ipynb)
    2. Discrete Optimization (GA)
    3. Continuous Optimization (GA)
    4. Continuous Optimization (PSO)
@@ -43,7 +43,9 @@ Once the image is downloaded, we can run the contents with:
 docker run -p 8888:8888 chipdelmal/mgsurve_webinar2023
 ```
 
-and head to the following address on our internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab); where a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) session should be running with all the required contents and packages for the course. Additionally, instructions for [local installation](./InstallationLocal.md), but if something goes wrong with the installations have a look at our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html), where more information and alternatives are provided.
+and head to the following address on our internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab); where a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) session should be running with all the required contents and packages for the course. To open up the webinar's index, open the [README.md file in the jupyterlab session](http://127.0.0.1:8888/lab/tree/README.md), right click anywhere in the document, and select `Show Markdown Preview`.
+
+Additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html).
 
 ## Authors and Funders
 

@@ -6,9 +6,8 @@ LABEL maintainer="Hector M. Sanchez C. <sanchez.hmsc@berkeley.edu>"
 # Setup Structure
 ###############################################################################
 RUN apt-get update \
-    && apt-get install nano \
+    && apt-get install nano tini \
     && apt-get install gcc -y \
-    && apt-get install tini \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir MGSurvE_Webinar2023
 WORKDIR /MGSurvE_Webinar2023
@@ -34,9 +33,8 @@ RUN conda update -n base -c defaults conda \
     && conda config --add channels bioconda \
     && conda install gdal fiona pyproj cartopy libpysal -y \
     && conda install -c conda-forge deap nodejs -y \ 
-    && conda install jupyter jupyterlab \
-    && pip install termcolor \
-    && pip install MGSurvE
+    && conda install -c conda-forge jupyter jupyterlab \
+    && pip install termcolor MGSurvE 
 ###############################################################################
 # Entrypoint
 ###############################################################################
