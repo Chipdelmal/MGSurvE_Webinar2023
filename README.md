@@ -27,6 +27,8 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
 3. [Analysis](./demos/analysis/)
 4. [Further Information](./demos/more/)
    1. [Mathematical Formulation](./demos/more/math.ipynb)
+   2. Particle-Swarm Optimization (PSO)
+   3. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
 
 all of which will be covered in the webinar so that all of its features can be used by attendees.
 ## Installation Instructions

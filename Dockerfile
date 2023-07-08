@@ -33,7 +33,7 @@ RUN conda update -n base -c defaults conda \
     && conda config --add channels bioconda \
     && conda install gdal fiona pyproj cartopy libpysal -y \
     && conda install -c conda-forge deap nodejs -y \ 
-    && conda install -c conda-forge jupyter jupyterlab \
+    && conda install -c conda-forge jupyter jupyterlab basemap-data-hires \
     && pip install termcolor MGSurvE 
 ###############################################################################
 # Entrypoint
