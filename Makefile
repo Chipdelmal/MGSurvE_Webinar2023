@@ -5,29 +5,6 @@ pip=pip
 version:=$(shell $(python) version.py)
 
 ###############################################################################
-# Jupyter
-###############################################################################
-FUNDAMENTALS = $(wildcard ./demos/fundamentals/*.ipynb)
-LANDSCAPE = $(wildcard ./demos/landscape/*.ipynb)
-OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
-ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
-MORE = $(wildcard ./demos/more/*.ipynb)
-
-jupyter_fundamentals: 
-	@for f in $(FUNDAMENTALS); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
-	done
-
-jupyter_landscape: 
-	@for f in $(LANDSCAPE); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
-	done
-
-jupyter_all:
-	- make jupyter_fundamentals
-	- make jupyter_landscape
-
-###############################################################################
 # Docker
 ###############################################################################
 docker_release:
@@ -48,3 +25,44 @@ docker_build:
 
 docker_prune:
 	- docker system prune
+
+###############################################################################
+# Jupyter
+###############################################################################
+FUNDAMENTALS = $(wildcard ./demos/fundamentals/*.ipynb)
+LANDSCAPE = $(wildcard ./demos/landscape/*.ipynb)
+OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
+ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
+MORE = $(wildcard ./demos/more/*.ipynb)
+
+jupyter_fundamentals: 
+	@for f in $(FUNDAMENTALS); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_landscape: 
+	@for f in $(LANDSCAPE); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_optimization: 
+	@for f in $(OPTIMIZATION); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_analysis: 
+	@for f in $(ANALYSIS); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_more: 
+	@for f in $(MORE); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_all:
+	- make jupyter_fundamentals
+	- make jupyter_landscape
+	- make jupyter_optimization
+	- make jupyter_analysis
+	- make jupyter_more
