@@ -5,6 +5,29 @@ pip=pip
 version:=$(shell $(python) version.py)
 
 ###############################################################################
+# Jupyter
+###############################################################################
+FUNDAMENTALS = $(wildcard ./demos/fundamentals/*.ipynb)
+LANDSCAPE = $(wildcard ./demos/landscape/*.ipynb)
+OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
+ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
+MORE = $(wildcard ./demos/more/*.ipynb)
+
+jupyter_fundamentals: 
+	@for f in $(FUNDAMENTALS); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_landscape: 
+	@for f in $(LANDSCAPE); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
+jupyter_all:
+	- make jupyter_fundamentals
+	- make jupyter_landscape
+
+###############################################################################
 # Docker
 ###############################################################################
 docker_release:
