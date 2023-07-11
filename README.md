@@ -30,10 +30,10 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    2. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
    3. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
 
-all of which will be covered in the webinar so that all of its features can be used by attendees.
+most of which will be covered in the webinar so that all of its features can be used by attendees.
 ## Installation Instructions
 
-The code and materials for this webinar can be downloaded and run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [docker container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
+The code and materials for this webinar can be downloaded and run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
 
 ```bash
 docker pull chipdelmal/mgsurve_webinar2023
