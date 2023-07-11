@@ -20,7 +20,7 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    2. [Heterogeneous Point-Types](./demos/landscape/complexLandscape.ipynb)
    3. [Custom Migration Matrix](./demos/landscape/customLandscape.ipynb)
 2. [Optimization](./demos/optimization/)
-   1. [Genetic Algorithm Primer](./demos/optimization/ga.ipynb)
+   1. [Genetic Algorithm Basics](./demos/optimization/ga.ipynb)
    2. [Discrete Optimization (GA)](./demos/optimization/discrete.ipynb)
    3. [Continuous Optimization (GA)](./demos/optimization/continuous.ipynb)
 3. [Analysis](./demos/analysis/)
