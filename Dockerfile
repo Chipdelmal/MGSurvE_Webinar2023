@@ -32,7 +32,8 @@ RUN conda update -n base -c defaults conda \
     && conda config --add channels conda-forge \
     && conda config --add channels bioconda \
     && conda install gdal fiona pyproj cartopy libpysal -y \
-    && conda install -c conda-forge deap nodejs osmnx -y \ 
+    && conda install -c conda-forge deap nodejs -y \ 
+    && conda install -c conda-forge --strict-channel-priority osmnx -y \
     && conda install -c conda-forge jupyter jupyterlab basemap-data-hires -y \
     && pip install termcolor MGSurvE 
 ###############################################################################
