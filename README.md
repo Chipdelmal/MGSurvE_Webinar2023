@@ -53,3 +53,5 @@ Additional instructions for [local installation](./InstallationLocal.md) are pro
 [Héctor M. Sánchez C.](https://chipdelmal.github.io/blog/), [David L. Smith](http://www.healthdata.org/about/david-smith), [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/)
 
 <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/berkeley.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/IHME.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/gates.jpg" height="25px">
+
+Special thanks to: [Tomás León](https://tomasleon.com/), [Jared B Bennett](https://www.linkedin.com/in/jared-bennett-21a7a9a0), Elijah Bartolome, Topiltzin Hernández Mares, Lillian Weng, Xingli Yu, Ayden Salazar, and Joanna Yoo.
