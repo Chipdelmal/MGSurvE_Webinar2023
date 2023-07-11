@@ -24,6 +24,7 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    2. [Discrete Optimization (GA)](./demos/optimization/discrete.ipynb)
    3. [Continuous Optimization (GA)](./demos/optimization/continuous.ipynb)
 3. [Analysis](./demos/analysis/)
+   1. [Visualization Tools](./demos/analysis/visualization.ipynb)
 4. [Further Information](./demos/more/)
    1. [Mathematical Formulation](./demos/more/math.ipynb)
    2. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
@@ -50,7 +51,8 @@ Additional instructions for [local installation](./InstallationLocal.md) are pro
 
 ## Authors and Funders
 
-[Héctor M. Sánchez C.](https://chipdelmal.github.io/blog/), [David L. Smith](http://www.healthdata.org/about/david-smith), [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/)
+Dev: [Héctor M. Sánchez C.](https://chipdelmal.github.io/blog/)<br>
+PIs: [David L. Smith](http://www.healthdata.org/about/david-smith), [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/)
 
 <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/berkeley.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/IHME.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/gates.jpg" height="25px">
 
