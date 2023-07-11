@@ -8,6 +8,7 @@ version:=$(shell $(python) version.py)
 # Docker
 ###############################################################################
 docker_release:
+	- make jupyter_all
 	- docker build -t chipdelmal/mgsurve_webinar2023:$(version) .
 	- docker push chipdelmal/mgsurve_webinar2023:$(version)
 	- docker build -t chipdelmal/mgsurve_webinar2023:latest .
@@ -66,3 +67,11 @@ jupyter_all:
 	- make jupyter_optimization
 	- make jupyter_analysis
 	- make jupyter_more
+
+###############################################################################
+# Conda
+###############################################################################
+
+conda_export:
+	- pip freeze > ./conda/requirements.txt
+	- conda env export | cut -f 1 -d '=' | grep -v "prefix" > ./conda/requirements.yml
