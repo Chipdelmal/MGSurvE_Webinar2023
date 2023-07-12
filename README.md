@@ -29,7 +29,7 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    1. [Visualization Tools](./demos/analysis/visualization.ipynb)
 4. [Further Information](./demos/more/)
    1. [Mathematical Formulation](./demos/more/math.ipynb)
-   2. [Open Street Map Compatibility](./demos/more/osm.ipynb)
+   2. [OpenStreetMap Compatibility](./demos/more/osm.ipynb)
    3. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
    4. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
 
