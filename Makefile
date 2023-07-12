@@ -8,6 +8,7 @@ version:=$(shell $(python) version.py)
 # Docker
 ###############################################################################
 docker_release:
+	- make docker_build
 	- make jupyter_all
 	- docker build -t chipdelmal/mgsurve_webinar2023:$(version) .
 	- docker push chipdelmal/mgsurve_webinar2023:$(version)
