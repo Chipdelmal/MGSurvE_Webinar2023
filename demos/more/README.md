@@ -1,4 +1,4 @@
-# More
+# More Information
 
 Additional information with more advanced topics for the curious attendees!
 
