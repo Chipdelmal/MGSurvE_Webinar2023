@@ -29,6 +29,7 @@ The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal
    3. [Continuous Optimization (GA)](./demos/optimization/continuous.ipynb)
 3. [Analysis](./demos/analysis/)
    1. [Visualization Tools](./demos/analysis/visualization.ipynb)
+   2. [GA Comparison](./demos/analysis/comparison.ipynb)
 4. [More Information](./demos/more/)
    1. [Mathematical Formulation](./demos/more/math.ipynb)
    2. [OpenStreetMap Compatibility](./demos/more/osm.ipynb)
