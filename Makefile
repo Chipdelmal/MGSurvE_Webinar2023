@@ -31,11 +31,18 @@ docker_prune:
 ###############################################################################
 # Jupyter
 ###############################################################################
+TESTS = $(wildcard ./tests/*.ipynb)
 FUNDAMENTALS = $(wildcard ./demos/fundamentals/*.ipynb)
 LANDSCAPE = $(wildcard ./demos/landscape/*.ipynb)
 OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
 ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
 MORE = $(wildcard ./demos/more/*.ipynb)
+
+
+jupyter_tests: 
+	@for f in $(TESTS); \
+		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+	done
 
 jupyter_fundamentals: 
 	@for f in $(FUNDAMENTALS); \
@@ -63,6 +70,7 @@ jupyter_more:
 	done
 
 jupyter_all:
+	- make jupyter_tests
 	- make jupyter_fundamentals
 	- make jupyter_landscape
 	- make jupyter_optimization
