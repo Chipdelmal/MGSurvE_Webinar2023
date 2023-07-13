@@ -5,6 +5,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Chipdelmal/MGSurvE)
 [<img src="https://img.shields.io/badge/ReadThe-docs-E40046.svg?logo=readthedocs">](https://chipdelmal.github.io/MGSurvE/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8140947.svg)](https://doi.org/10.5281/zenodo.8140947)
+
 
 :construction: **Under Development** :construction:
 
