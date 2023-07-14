@@ -17,21 +17,21 @@ As of today, our publication is on the submission and review process, but you ca
 
 The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal/MGSurvE) structure:
 
-0. [Fundamentals](./demos/fundamentals)
+1. Fundamentals
    1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
    2. [Workflow Breakdown](./demos/fundamentals/breakdown.ipynb)
-1. [Landscape](./demos/landscape/)
+2. Landscape
    1. [Basic Landscape Elements](./demos/landscape/simpleLandscape.ipynb)
    2. [Heterogeneous Point-Types](./demos/landscape/complexLandscape.ipynb)
    3. [Custom Migration Matrix](./demos/landscape/customLandscape.ipynb)
-2. [Optimization](./demos/optimization/)
+3. Optimization
    1. [Genetic Algorithm Primer](./demos/optimization/ga.ipynb)
    2. [Discrete Optimization (GA)](./demos/optimization/discrete.ipynb)
    3. [Continuous Optimization (GA)](./demos/optimization/continuous.ipynb)
-3. [Analysis](./demos/analysis/)
+4. Analysis
    1. [Visualization Tools](./demos/analysis/visualization.ipynb)
    2. [GA Comparison](./demos/analysis/comparison.ipynb)
-4. [More Information](./demos/more/)
+5. More Information
    1. [Mathematical Formulation](./demos/more/math.ipynb)
    2. [OpenStreetMap Compatibility](./demos/more/osm.ipynb)
    3. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
