@@ -1,9 +1,14 @@
 
-SHELL=bash
+SHELL=/bin/bash
 python='python'
 pip=pip
 version:=$(shell $(python) version.py)
+JUPYTER='~/miniconda3/envs/MGSurvE_Webinar/bin/jupyter'
 
+check:
+	- source ~/miniconda3/etc/profile.d/conda.sh
+	- conda activate MGSurvE_Webinar
+	- echo $(shell which python)
 ###############################################################################
 # Docker
 ###############################################################################
@@ -38,38 +43,38 @@ OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
 ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
 MORE = $(wildcard ./demos/more/*.ipynb)
 
-
 jupyter_tests:
 	@for f in $(TESTS); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_fundamentals: 
 	@for f in $(FUNDAMENTALS); \
-		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_landscape: 
 	@for f in $(LANDSCAPE); \
-		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_optimization: 
 	@for f in $(OPTIMIZATION); \
-		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_analysis: 
 	@for f in $(ANALYSIS); \
-		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_more: 
 	@for f in $(MORE); \
-		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_all:
+	- make jupyter_tests
 	- make jupyter_fundamentals
 	- make jupyter_landscape
 	- make jupyter_optimization
