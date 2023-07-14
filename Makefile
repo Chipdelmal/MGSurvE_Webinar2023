@@ -1,6 +1,6 @@
 
 SHELL=bash
-python=python
+python='python'
 pip=pip
 version:=$(shell $(python) version.py)
 
@@ -39,38 +39,37 @@ ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
 MORE = $(wildcard ./demos/more/*.ipynb)
 
 
-jupyter_tests: 
+jupyter_tests:
 	@for f in $(TESTS); \
 		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_fundamentals: 
 	@for f in $(FUNDAMENTALS); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_landscape: 
 	@for f in $(LANDSCAPE); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_optimization: 
 	@for f in $(OPTIMIZATION); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_analysis: 
 	@for f in $(ANALYSIS); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_more: 
 	@for f in $(MORE); \
-		do jupyter nbconvert --execute --to notebook --inplace $${f}; \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 jupyter nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
 jupyter_all:
-	- make jupyter_tests
 	- make jupyter_fundamentals
 	- make jupyter_landscape
 	- make jupyter_optimization
@@ -84,3 +83,9 @@ jupyter_all:
 conda_export:
 	- pip freeze > ./conda/requirements.txt
 	- conda env export | cut -f 1 -d '=' | grep -v "prefix" > ./conda/requirements.yml
+
+###############################################################################
+# Conda
+###############################################################################
+upgrade:
+	- python -m pip install MGSurvE --upgrade
