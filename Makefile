@@ -3,7 +3,6 @@ SHELL=/bin/bash
 python='python'
 pip=pip
 version:=$(shell $(python) version.py)
-# JUPYTER='~/miniconda3/envs/MGSurvE_Webinar/bin/jupyter'
 JUPYTER=$(shell dirname $(shell which python))/jupyter
 
 check:
