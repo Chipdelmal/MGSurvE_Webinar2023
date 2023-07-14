@@ -3,12 +3,12 @@ SHELL=/bin/bash
 python='python'
 pip=pip
 version:=$(shell $(python) version.py)
-JUPYTER='~/miniconda3/envs/MGSurvE_Webinar/bin/jupyter'
+# JUPYTER='~/miniconda3/envs/MGSurvE_Webinar/bin/jupyter'
+JUPYTER=$(shell dirname $(shell which python))/jupyter
 
 check:
-	- source ~/miniconda3/etc/profile.d/conda.sh
-	- conda activate MGSurvE_Webinar
-	- echo $(shell which python)
+	- echo $(shell dirname $(shell which python))/jupyter
+	- echo $(shell which jupyter)
 ###############################################################################
 # Docker
 ###############################################################################
