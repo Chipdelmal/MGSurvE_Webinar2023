@@ -12,12 +12,12 @@ check:
 # Docker
 ###############################################################################
 docker_release:
-	- make docker_build
-	- make jupyter_all
+ 	- make docker_build
+ 	- make jupyter_all
 	- docker build -t chipdelmal/mgsurve_webinar2023:$(version) .
 	- docker push chipdelmal/mgsurve_webinar2023:$(version)
-	- docker build -t chipdelmal/mgsurve_webinar2023:latest .
-	- docker push chipdelmal/mgsurve_webinar2023:latest
+ 	- docker build -t chipdelmal/mgsurve_webinar2023:latest .
+ 	- docker push chipdelmal/mgsurve_webinar2023:latest
 
 docker_bash:
 	- docker run -it mgsurve_webinar2023:dev bash

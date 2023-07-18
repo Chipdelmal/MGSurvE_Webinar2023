@@ -9,13 +9,9 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8140947.svg)](https://doi.org/10.5281/zenodo.8140947)
 
 
-:construction: **Under Development** :construction:
-
-As of today, our publication is on the submission and review process, but you can have a look at our [preprint](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1) in the meantime!
+Our publication is on the submission and review process, but you can have a look at our [preprint](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1) in the meantime!
 
 ## Contents
-
-The contents of the course will follow [MGSurvE's](https://github.com/Chipdelmal/MGSurvE) structure:
 
 1. Fundamentals
    1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
