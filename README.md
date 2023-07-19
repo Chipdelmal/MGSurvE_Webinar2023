@@ -50,7 +50,22 @@ docker run -p 8888:8888 chipdelmal/mgsurve_webinar2023
 
 and head to the following address on our internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab); where a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) session should be running with all the required contents and packages for the course. To open up the webinar's index, open the [README.md file in the jupyterlab session](http://127.0.0.1:8888/lab/tree/README.md), right click anywhere in the document, and select `Show Markdown Preview`.
 
-Additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html).
+The changes we make within the Docker container won't be saved across sessions. If we want to make take notes on the notebooks and make changes session-persistent, first run:
+
+```bash
+docker volume create mgsurve
+```
+
+to create a docker volume, and then launch the image with:
+
+```bash
+docker run \
+   -v mgsurve:/MGSurvE_Webinar2023 \
+   -p 8888:8888 chipdelmal/mgsurve_webinar2023 
+```
+
+
+Finally, additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html) in case the [Docker](https://docs.docker.com/engine/install/) alternative is not suitable for any attendee!
 
 ## Authors and Funders
 
