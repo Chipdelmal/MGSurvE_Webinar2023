@@ -83,7 +83,6 @@ jupyter_all:
 ###############################################################################
 # Conda
 ###############################################################################
-
 conda_export:
 	- pip freeze > ./conda/requirements.txt
 	- conda env export | cut -f 1 -d '=' | grep -v "prefix" > ./conda/requirements.yml

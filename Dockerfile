@@ -34,7 +34,7 @@ RUN conda update -n base -c defaults conda \
     && conda install gdal fiona pyproj cartopy libpysal -y \
     && conda install -c conda-forge deap nodejs osmnx -y \ 
     && conda install -c conda-forge jupyter jupyterlab basemap-data-hires -y \
-    && pip install termcolor MGSurvE 
+    && python -m pip install termcolor MGSurvE 
 ###############################################################################
 # Entrypoint
 ###############################################################################
