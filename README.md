@@ -14,8 +14,9 @@ Our publication is on the submission and review process, but you can have a look
 ## Contents
 
 1. Fundamentals
-   1. [Quickstart](./demos/fundamentals/quickstart.ipynb)
-   2. [Workflow Breakdown](./demos/fundamentals/breakdown.ipynb)
+   1. [Python Intro (for R programmers)](./demos/fundamentals/python.ipynb)
+   2. [Quickstart](./demos/fundamentals/quickstart.ipynb)
+   3. [Workflow Breakdown](./demos/fundamentals/breakdown.ipynb)
 2. Landscape
    1. [Basic Landscape Elements](./demos/landscape/simpleLandscape.ipynb)
    2. [Heterogeneous Point-Types](./demos/landscape/complexLandscape.ipynb)
