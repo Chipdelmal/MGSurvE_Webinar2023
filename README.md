@@ -74,7 +74,7 @@ Dev and Webinar: [Héctor M. Sánchez C.](https://chipdelmal.github.io/blog/)
 
 <img src="./media/pusheen.jpg" height="97px" align="middle"><img src="./media/MGSurvE_Logo.png" height="100px" align="middle"> 
 
-PIs: [David L. Smith](http://www.healthdata.org/about/david-smith), [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/)
+PIs: [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/), [David L. Smith](http://www.healthdata.org/about/david-smith)
 
 <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/berkeley.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/IHME.jpg" height="25px"> &nbsp; <img src="https://github.com/Chipdelmal/MGSurvE/raw/main/img/gates.jpg" height="25px">
 
