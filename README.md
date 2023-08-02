@@ -28,13 +28,12 @@ Our publication is on the submission and review process, but you can have a look
 4. Analysis
    1. [Visualization Tools](./demos/analysis/visualization.ipynb)
    2. [GA Comparison](./demos/analysis/comparison.ipynb)
-5. More Information
+5. Advanced Topics
    1. [Mathematical Formulation](./demos/more/math.ipynb)
    2. [OpenStreetMap Compatibility](./demos/more/osm.ipynb)
    3. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
    4. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
 
-most of which will be covered in the webinar so that all of its features can be used by attendees.
 ## Installation Instructions
 
 The code and materials for this webinar can be downloaded and run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
