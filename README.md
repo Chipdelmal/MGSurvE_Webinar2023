@@ -79,7 +79,7 @@ PIs: [John M. Marshall](https://publichealth.berkeley.edu/people/john-marshall/)
 
 ### Special Thanks
 
-* [Tomás León](https://tomasleon.com/) for allowing us the use of his São Tomé migration matrix, and for suggestions and advice in the ecology of the application.
+* [Tomás León](https://tomasleon.com/) for allowing us the use of his São Tomé migration matrix, and for advice in the ecology of the application.
 * [Jared B Bennett](https://www.linkedin.com/in/jared-bennett-21a7a9a0) for tips and tricks on software and math for the optimization process.
 * Lillian Weng, Xingli Yu, Ayden Salazar, Topiltzin Hernández Mares, and Joanna Yoo, for their help in developing the PSO algorithm.
 * Elijah Bartolome for several benchmarks on the speed and accuracy of different spherical distance functions.
