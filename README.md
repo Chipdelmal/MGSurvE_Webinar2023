@@ -65,7 +65,7 @@ docker run \
 ```
 
 
-Finally, additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html) in case the [Docker](https://docs.docker.com/engine/install/) alternative is not suitable for any attendee!
+Additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html) in case the [Docker](https://docs.docker.com/engine/install/) alternative is not suitable for any attendee!
 
 ## Authors and Funders
 
