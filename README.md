@@ -56,7 +56,7 @@ The changes we make within the Docker container won't be saved across sessions. 
 docker volume create mgsurve
 ```
 
-to create a docker volume, and then launch the image with:
+to create a docker volume. We can then launch the image with the volume attached with the following command:
 
 ```bash
 docker run \
