@@ -36,7 +36,7 @@ Our publication is in review, but you can have a look at our [preprint](https://
 
 ## Installation Instructions
 
-The code and materials for this webinar can be downloaded and run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
+The materials for this webinar can be run by installing the [codebase locally](./InstallationLocal.md), or by using our [docker image](./Installation_Docker.md). The easiest way to get all the materials for the webinar is to install [Docker](https://docs.docker.com/engine/install/) and download our [container](https://hub.docker.com/r/chipdelmal/mgsurve_webinar2023) with the following command in our terminal:
 
 ```bash
 docker pull chipdelmal/mgsurve_webinar2023
@@ -48,7 +48,7 @@ Once the image is downloaded, we can run the contents with:
 docker run -p 8888:8888 chipdelmal/mgsurve_webinar2023
 ```
 
-and head to the following address on our internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab); where a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) session should be running with all the required contents and packages for the course. To open up the webinar's index, open the [README.md file in the jupyterlab session](http://127.0.0.1:8888/lab/tree/README.md), right click anywhere in the document, and select `Show Markdown Preview`.
+and head to the following address in our internet browser: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab); where a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) session should be running with all the required contents and packages for the course. To open up the webinar's index, open the [README.md file in the jupyterlab session](http://127.0.0.1:8888/lab/tree/README.md), right click anywhere in the document, and select `Show Markdown Preview`.
 
 The changes we make within the Docker container won't be saved across sessions. If we want to make take notes on the notebooks and make changes session-persistent, first run:
 
