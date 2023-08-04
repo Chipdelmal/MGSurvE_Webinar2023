@@ -9,7 +9,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8140947.svg)](https://doi.org/10.5281/zenodo.8140947)
 
 
-Our publication is on the submission and review process, but you can have a look at our [preprint](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1) in the meantime!
+Our publication is in review, but you can have a look at our [preprint](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1) in the meantime!
 
 ## Contents
 
