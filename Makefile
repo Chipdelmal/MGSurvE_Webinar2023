@@ -10,14 +10,19 @@ check:
 	- echo $(shell which jupyter)
 ###############################################################################
 # Docker
+# - make docker_build
+# - make jupyter_all
+# - docker buildx build --platform=linux/amd64,linux/arm64 -t chipdelmal/mgsurve_webinar2023:$(version) .
+# - docker push chipdelmal/mgsurve_webinar2023:$(version)
+# docker buildx build . --platform=linux/amd64 -t user/image -t ghcr.io/user/image --push
+# docker push chipdelmal/mgsurve_webinar2023:latest
 ###############################################################################
 docker_release:
-	- make docker_build
-	- make jupyter_all
-	- docker build -t chipdelmal/mgsurve_webinar2023:$(version) .
-	- docker push chipdelmal/mgsurve_webinar2023:$(version)
-	- docker build -t chipdelmal/mgsurve_webinar2023:latest .
-	- docker push chipdelmal/mgsurve_webinar2023:latest
+	- docker buildx build . \
+		--platform=linux/amd64,linux/arm64,linux/x86_64 \
+		-t chipdelmal/mgsurve_webinar2023:$(version) \
+		-t chipdelmal/mgsurve_webinar2023:latest \
+		--push
 
 docker_bash:
 	- docker run -it mgsurve_webinar2023:dev bash
