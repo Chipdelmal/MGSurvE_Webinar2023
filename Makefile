@@ -10,12 +10,12 @@ check:
 	- echo $(shell which jupyter)
 ###############################################################################
 # Docker
+# 	- make docker_build
+# 	- make jupyter_all
 ###############################################################################
 docker_release:
-	- make docker_build
-	- make jupyter_all
 	- docker buildx build . \
-		--platform=linux/amd64,linux/arm64,linux/x86_64 \
+		--platform=linux/amd64,linux/arm64 \
 		-t chipdelmal/mgsurve_webinar2023:$(version) \
 		-t chipdelmal/mgsurve_webinar2023:latest \
 		--push
