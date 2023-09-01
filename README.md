@@ -32,7 +32,10 @@ Our publication is in review, but you can have a look at our [preprint](https://
    1. [Mathematical Formulation](./demos/more/math.ipynb)
    2. [OpenStreetMap Compatibility](./demos/more/osm.ipynb)
    3. [Particle-Swarm Optimization (PSO)](./demos/more/pso.ipynb)
-   4. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
+6. Preprint's Demos
+   1. [Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2023.06.26.546301v1)
+   2. [São Tomé](./demos/paper/STP.ipynb)
+   3. [Yorkeys Knob](./demos/paper/YKN.ipynb)
 
 ## Installation Instructions
 
