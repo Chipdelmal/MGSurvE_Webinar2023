@@ -42,6 +42,7 @@ LANDSCAPE = $(wildcard ./demos/landscape/*.ipynb)
 OPTIMIZATION = $(wildcard ./demos/optimization/*.ipynb)
 ANALYSIS = $(wildcard ./demos/analysis/*.ipynb)
 MORE = $(wildcard ./demos/more/*.ipynb)
+PAPER = $(wildcard ./demos/paper/*.ipynb)
 
 jupyter_tests:
 	@for f in $(TESTS); \
@@ -73,6 +74,11 @@ jupyter_more:
 		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
 	done
 
+jupyter_paper: 
+	@for f in $(PAPER); \
+		do PYDEVD_DISABLE_FILE_VALIDATION=1 $(JUPYTER) nbconvert --execute --to notebook --inplace $${f}; \
+	done
+
 jupyter_all:
 	- make jupyter_tests
 	- make jupyter_fundamentals
@@ -80,6 +86,7 @@ jupyter_all:
 	- make jupyter_optimization
 	- make jupyter_analysis
 	- make jupyter_more
+	- make jupyter_paper
 
 ###############################################################################
 # Conda
