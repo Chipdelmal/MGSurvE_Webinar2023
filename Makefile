@@ -11,9 +11,9 @@ check:
 ###############################################################################
 # Docker
 # 	- make docker_build
-# 	- make jupyter_all
 ###############################################################################
 docker_release:
+	- make jupyter_all
 	- docker buildx build . \
 		--platform=linux/amd64,linux/arm64 \
 		-t chipdelmal/mgsurve_webinar2023:$(version) \
