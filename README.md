@@ -70,6 +70,12 @@ docker run \
 
 Additional instructions for [local installation](./InstallationLocal.md) are provided, as well as a more thorough set of alternatives in our [package documentation](https://chipdelmal.github.io/MGSurvE/build/html/installation.html) in case the [Docker](https://docs.docker.com/engine/install/) alternative is not suitable for any attendee!
 
+## Video Recording
+
+To watch the recording of the webinar session click on our banner!
+
+<a href="https://youtu.be/RhYmeJ3XZ_8">![](./media/webBanner.jpg)</a>
+
 ## Authors and Funders
 
 Dev and Webinar: [Héctor M. Sánchez C.](https://chipdelmal.github.io/blog/)
